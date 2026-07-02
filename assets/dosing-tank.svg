@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="160" viewBox="0 0 520 160" role="img" aria-label="Dosing tank">
+  <defs>
+    <linearGradient id="liquid" x1="0" x2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="160" rx="34" fill="none"/>
+  <path d="M58 49 H103 C115 49 124 58 124 70 V124 C124 138 113 149 99 149 H62 C48 149 37 138 37 124 V70 C37 58 46 49 58 49Z" fill="#dbeafe" stroke="#2563eb" stroke-width="7"/>
+  <path d="M62 24 H99 C105 24 110 29 110 35 V50 H51 V35 C51 29 56 24 62 24Z" fill="#1d4ed8"/>
+  <path d="M54 89 H107" stroke="url(#liquid)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M54 113 H107" stroke="url(#liquid)" stroke-width="9" stroke-linecap="round"/>
+  <text x="154" y="77" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#1e3a8a">Dosing</text>
+  <text x="154" y="121" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#2563eb">Tank</text>
+</svg>
