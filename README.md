@@ -2,15 +2,7 @@
 
 Mini site GitHub Pages pour présenter mes projets Home Assistant.
 
-## Fichiers
-
-- `index.html`
-- `style.css`
-- `assets/`
-  - `profile.jpeg`
-  - `dosing-tank.svg`
-
-URL attendue :
+URL :
 
 ```text
 https://ADNPolymerase.github.io/HA/
