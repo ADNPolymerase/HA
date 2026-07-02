@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Catalogue des projets Home Assistant, Oklyn, PoolLab et domotique piscine par ADNPolymerase." />
+  <meta name="description" content="Home Assistant projects catalog — Oklyn, PoolLab and pool automation integrations by ADNPolymerase." data-en="Home Assistant projects catalog — Oklyn, PoolLab and pool automation integrations by ADNPolymerase." data-fr="Catalogue des projets Home Assistant, Oklyn, PoolLab et domotique piscine par ADNPolymerase." />
   <title>ADNPolymerase — Home Assistant Projects</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,7 +12,7 @@
   <div class="page-glow page-glow-two"></div>
 
   <header class="hero">
-    <nav class="topbar container" aria-label="En-tête">
+    <nav class="topbar container" aria-label="Header">
       <div class="brand">
         <img src="assets/profile.jpeg" alt="" class="avatar" />
         <span>
@@ -20,21 +20,34 @@
           <small>Home Assistant Projects</small>
         </span>
       </div>
+
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true" aria-label="English">
+          <span class="flag" aria-hidden="true">🇬🇧</span>
+          <span class="lang-label">EN</span>
+        </button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false" aria-label="Français">
+          <span class="flag" aria-hidden="true">🇫🇷</span>
+          <span class="lang-label">FR</span>
+        </button>
+      </div>
     </nav>
 
     <section class="container hero-content">
       <p class="eyebrow">Custom integrations · Lovelace cards · Pool automation</p>
-      <h1>Mes projets Home Assistant</h1>
-      <p class="subtitle">
-        Intégrations, cartes personnalisées et forks des équipements connectés dans Home Assistant.
-        Actuellement : Oklyn, PoolLab, Landroid Vision Cloud.
+      <h1 data-en="My Home Assistant projects" data-fr="Mes projets Home Assistant">My Home Assistant projects</h1>
+      <p class="subtitle"
+         data-en="Custom integrations, Lovelace cards and forks for connected devices in Home Assistant. Currently: Oklyn, PoolLab, Landroid Vision Cloud."
+         data-fr="Intégrations, cartes personnalisées et forks des équipements connectés dans Home Assistant. Actuellement : Oklyn, PoolLab, Landroid Vision Cloud.">
+        Custom integrations, Lovelace cards and forks for connected devices in Home Assistant.
+        Currently: Oklyn, PoolLab, Landroid Vision Cloud.
       </p>
     </section>
   </header>
 
   <main class="container">
-    <section id="projects" class="projects" aria-label="Liste des projets">
-      <a class="project-card featured" href="https://github.com/ADNPolymerase/ha-oklyn" aria-label="Ouvrir le projet ha-oklyn sur GitHub">
+    <section id="projects" class="projects" aria-label="Project list">
+      <a class="project-card featured" href="https://github.com/ADNPolymerase/ha-oklyn" aria-label="Open ha-oklyn on GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
         </div>
@@ -44,8 +57,9 @@
             <span class="status">Cloud</span>
           </div>
           <h2>ha-oklyn</h2>
-          <p>
-            Intégration Home Assistant pour récupérer et piloter les données Oklyn depuis le cloud.
+          <p data-en="Home Assistant integration to read and control Oklyn pool controller data via the cloud."
+             data-fr="Intégration Home Assistant pour récupérer et piloter les données Oklyn depuis le cloud.">
+            Home Assistant integration to read and control Oklyn pool controller data via the cloud.
           </p>
         </div>
         <div class="card-footer">
@@ -54,7 +68,7 @@
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/oklyn-card" aria-label="Ouvrir le projet oklyn-card sur GitHub">
+      <a class="project-card" href="https://github.com/ADNPolymerase/oklyn-card" aria-label="Open oklyn-card on GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
         </div>
@@ -64,8 +78,9 @@
             <span class="status">UI</span>
           </div>
           <h2>oklyn-card</h2>
-          <p>
-            Carte Lovelace pour afficher les informations Oklyn avec une interface claire et lisible.
+          <p data-en="Lovelace card that displays Oklyn pool data with a clean, readable interface."
+             data-fr="Carte Lovelace pour afficher les informations Oklyn avec une interface claire et lisible.">
+            Lovelace card that displays Oklyn pool data with a clean, readable interface.
           </p>
         </div>
         <div class="card-footer">
@@ -74,27 +89,28 @@
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn-local" aria-label="Ouvrir le projet ha-oklyn-local sur GitHub">
+      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn-local" aria-label="Open ha-oklyn-local on GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
         </div>
         <div class="content">
           <div class="meta">
-            <span class="pill">Experimental</span>
+            <span class="pill">Integration</span>
             <span class="status">Local</span>
           </div>
           <h2>ha-oklyn-local</h2>
-          <p>
-            Exploration de l’accès local aux équipements Oklyn afin de réduire la dépendance au cloud.
+          <p data-en="Local polling of Oklyn devices over the LAN API — no cloud dependency, read-only."
+             data-fr="Interrogation locale des équipements Oklyn via l'API LAN — sans dépendance au cloud, lecture seule.">
+            Local polling of Oklyn devices over the LAN API — no cloud dependency, read-only.
           </p>
         </div>
         <div class="card-footer">
-          <span>Local API · Research</span>
+          <span>Local API · No cloud</span>
           <span class="arrow">→</span>
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/poollab-card" aria-label="Ouvrir le projet poollab-card sur GitHub">
+      <a class="project-card" href="https://github.com/ADNPolymerase/poollab-card" aria-label="Open poollab-card on GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/poollab-card/main/logo.png" alt="PoolLab Card" />
         </div>
@@ -104,17 +120,18 @@
             <span class="status">Pool</span>
           </div>
           <h2>poollab-card</h2>
-          <p>
-            Carte Lovelace pour afficher les mesures PoolLab directement dans Home Assistant.
+          <p data-en="Lovelace card that displays PoolLab water analysis measurements directly in Home Assistant."
+             data-fr="Carte Lovelace pour afficher les mesures PoolLab directement dans Home Assistant.">
+            Lovelace card that displays PoolLab water analysis measurements directly in Home Assistant.
           </p>
         </div>
         <div class="card-footer">
-          <span>PoolLab · Piscine</span>
+          <span>PoolLab · Pool</span>
           <span class="arrow">→</span>
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/ha-dosing-tank-card" aria-label="Ouvrir le projet dosing-tank-card sur GitHub">
+      <a class="project-card" href="https://github.com/ADNPolymerase/ha-dosing-tank-card" aria-label="Open dosing-tank-card on GitHub">
         <div class="visual dosing-logo">
           <img src="assets/dosing-tank.svg" alt="Dosing tank" />
         </div>
@@ -124,8 +141,9 @@
             <span class="status">Dosing</span>
           </div>
           <h2>dosing-tank-card</h2>
-          <p>
-            Carte Lovelace pour suivre le niveau d’un bidon de dosage liquide selon le temps de fonctionnement de la pompe.
+          <p data-en="Lovelace card that tracks a chemical dosing tank's level based on pump run time."
+             data-fr="Carte Lovelace pour suivre le niveau d'un bidon de dosage liquide selon le temps de fonctionnement de la pompe.">
+            Lovelace card that tracks a chemical dosing tank's level based on pump run time.
           </p>
         </div>
         <div class="card-footer">
@@ -134,18 +152,19 @@
         </div>
       </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/worx_vision_cloud_plus_github" aria-label="Ouvrir le projet Worx Vision Cloud Plus sur GitHub">
+      <a class="project-card" href="https://github.com/ADNPolymerase/worx_vision_cloud_plus_github" aria-label="Open Worx Vision Cloud Plus on GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/worx_vision_cloud_plus_github/main/logo.png" alt="Worx Vision Cloud Plus" />
         </div>
         <div class="content">
           <div class="meta">
-            <span class="pill">Fork / PR</span>
+            <span class="pill">Fork</span>
             <span class="status">Vision</span>
           </div>
           <h2>Worx Vision Cloud Plus</h2>
-          <p>
-            Fork de l’intégration Worx Vision Cloud Plus avec traductions FR/DE et améliorations de capteurs.
+          <p data-en="Enhanced fork of the Worx Vision Cloud Plus integration — new sensors, more languages and fixes."
+             data-fr="Fork amélioré de l'intégration Worx Vision Cloud Plus — nouveaux capteurs, langues supplémentaires et corrections.">
+            Enhanced fork of the Worx Vision Cloud Plus integration — new sensors, more languages and fixes.
           </p>
         </div>
         <div class="card-footer">
@@ -159,5 +178,36 @@
   <footer class="footer container">
     <span>ADNPolymerase · Home Assistant Projects</span>
   </footer>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = "ha-site-lang";
+      var buttons = document.querySelectorAll(".lang-btn");
+
+      function applyLang(lang) {
+        document.documentElement.setAttribute("lang", lang);
+        document.querySelectorAll("[data-" + lang + "]").forEach(function (el) {
+          el.textContent = el.getAttribute("data-" + lang);
+        });
+        buttons.forEach(function (btn) {
+          var active = btn.getAttribute("data-lang") === lang;
+          btn.setAttribute("aria-pressed", active ? "true" : "false");
+          btn.classList.toggle("active", active);
+        });
+        localStorage.setItem(STORAGE_KEY, lang);
+      }
+
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          applyLang(btn.getAttribute("data-lang"));
+        });
+      });
+
+      var saved = localStorage.getItem(STORAGE_KEY);
+      var browserLang = (navigator.language || "en").slice(0, 2);
+      var initial = saved || (browserLang === "fr" ? "fr" : "en");
+      applyLang(initial);
+    })();
+  </script>
 </body>
 </html>
