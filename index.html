@@ -12,18 +12,13 @@
   <div class="page-glow page-glow-two"></div>
 
   <header class="hero">
-    <nav class="topbar container" aria-label="Navigation principale">
-      <a class="brand" href="https://github.com/ADNPolymerase" aria-label="Profil GitHub ADNPolymerase">
+    <nav class="topbar container" aria-label="En-tête">
+      <div class="brand">
         <img src="assets/profile.jpeg" alt="" class="avatar" />
         <span>
           <strong>ADNPolymerase</strong>
           <small>Home Assistant Projects</small>
         </span>
-      </a>
-
-      <div class="nav-actions">
-        <a href="https://github.com/ADNPolymerase" class="ghost-link">GitHub</a>
-        <a href="#projects" class="button button-small">Projects</a>
       </div>
     </nav>
 
@@ -34,26 +29,12 @@
         Intégrations, cartes personnalisées et forks des équipements connectés dans Home Assistant.
         Actuellement : Oklyn, PoolLab, Landroid Vision Cloud.
       </p>
-
-      <div class="hero-actions">
-        <a class="button button-primary" href="#projects">Voir les projets</a>
-        <a class="button button-secondary" href="https://github.com/ADNPolymerase">Ouvrir GitHub</a>
-      </div>
     </section>
   </header>
 
   <main class="container">
-    <section class="toolbar" aria-label="Catégories">
-      <span>Integration</span>
-      <span>Lovelace Card</span>
-      <span>Oklyn</span>
-      <span>PoolLab</span>
-      <span>Dosing</span>
-      <span>Worx Vision</span>
-    </section>
-
     <section id="projects" class="projects" aria-label="Liste des projets">
-      <article class="project-card featured">
+      <a class="project-card featured" href="https://github.com/ADNPolymerase/ha-oklyn" aria-label="Ouvrir le projet ha-oklyn sur GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
         </div>
@@ -69,11 +50,11 @@
         </div>
         <div class="card-footer">
           <span>Home Assistant · Oklyn</span>
-          <a href="https://github.com/ADNPolymerase/ha-oklyn">GitHub →</a>
+          <span class="arrow">→</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card">
+      <a class="project-card" href="https://github.com/ADNPolymerase/oklyn-card" aria-label="Ouvrir le projet oklyn-card sur GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
         </div>
@@ -89,11 +70,11 @@
         </div>
         <div class="card-footer">
           <span>Lovelace · Oklyn</span>
-          <a href="https://github.com/ADNPolymerase/oklyn-card">GitHub →</a>
+          <span class="arrow">→</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card">
+      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn-local" aria-label="Ouvrir le projet ha-oklyn-local sur GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
         </div>
@@ -109,11 +90,11 @@
         </div>
         <div class="card-footer">
           <span>Local API · Research</span>
-          <a href="https://github.com/ADNPolymerase/ha-oklyn-local">GitHub →</a>
+          <span class="arrow">→</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card">
+      <a class="project-card" href="https://github.com/ADNPolymerase/poollab-card" aria-label="Ouvrir le projet poollab-card sur GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/poollab-card/main/logo.png" alt="PoolLab Card" />
         </div>
@@ -129,11 +110,11 @@
         </div>
         <div class="card-footer">
           <span>PoolLab · Piscine</span>
-          <a href="https://github.com/ADNPolymerase/poollab-card">GitHub →</a>
+          <span class="arrow">→</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card">
+      <a class="project-card" href="https://github.com/ADNPolymerase/ha-dosing-tank-card" aria-label="Ouvrir le projet dosing-tank-card sur GitHub">
         <div class="visual dosing-logo">
           <img src="assets/dosing-tank.svg" alt="Dosing tank" />
         </div>
@@ -149,11 +130,11 @@
         </div>
         <div class="card-footer">
           <span>Dosing · Tank</span>
-          <a href="https://github.com/ADNPolymerase/ha-dosing-tank-card">GitHub →</a>
+          <span class="arrow">→</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card">
+      <a class="project-card" href="https://github.com/ADNPolymerase/worx_vision_cloud_plus_github" aria-label="Ouvrir le projet Worx Vision Cloud Plus sur GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/worx_vision_cloud_plus_github/main/logo.png" alt="Worx Vision Cloud Plus" />
         </div>
@@ -169,15 +150,14 @@
         </div>
         <div class="card-footer">
           <span>Worx · Robot mower</span>
-          <a href="https://github.com/ADNPolymerase/worx_vision_cloud_plus_github">GitHub →</a>
+          <span class="arrow">→</span>
         </div>
-      </article>
+      </a>
     </section>
   </main>
 
   <footer class="footer container">
     <span>ADNPolymerase · Home Assistant Projects</span>
-    <a href="https://github.com/ADNPolymerase">github.com/ADNPolymerase</a>
   </footer>
 </body>
 </html>
