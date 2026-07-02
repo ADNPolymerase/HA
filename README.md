@@ -8,10 +8,7 @@ Mini site GitHub Pages pour présenter mes projets Home Assistant.
 - `style.css`
 - `assets/`
   - `profile.jpeg`
-  - `oklyn.svg`
-  - `poollab.svg`
   - `dosing-tank.svg`
-  - `landroid.svg`
 
 URL attendue :
 
