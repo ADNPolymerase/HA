@@ -1,36 +1,19 @@
-# ADNPolymerase — GitHub Pages
+# HA — ADNPolymerase
 
-Mini site statique pour présenter mes projets Home Assistant, Oklyn et PoolLab.
+Mini site GitHub Pages sous forme de cases/cartes pour présenter mes projets Home Assistant.
 
-## Mise en ligne rapide
+## Publication
 
-1. Créer un nouveau dépôt GitHub, par exemple `home-assistant-projects`.
-2. Envoyer les fichiers `index.html` et `style.css` dans le dépôt.
-3. Aller dans `Settings` → `Pages`.
-4. Dans `Build and deployment`, choisir :
-   - Source : `Deploy from a branch`
-   - Branch : `main`
-   - Folder : `/root`
-5. Valider.
+Dans le dépôt GitHub `HA` :
 
-L’URL sera normalement :
+1. Uploader `index.html` et `style.css`.
+2. Aller dans `Settings` → `Pages`.
+3. Choisir `Deploy from a branch`.
+4. Sélectionner `main` puis `/root`.
+5. Enregistrer.
 
-```text
-https://ADNPolymerase.github.io/home-assistant-projects/
-```
-
-## Variante site principal
-
-Pour avoir une URL plus courte :
+URL attendue :
 
 ```text
-https://ADNPolymerase.github.io/
+https://ADNPolymerase.github.io/HA/
 ```
-
-il faut créer un dépôt nommé exactement :
-
-```text
-ADNPolymerase.github.io
-```
-
-puis y déposer les mêmes fichiers.
