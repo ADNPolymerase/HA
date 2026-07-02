@@ -3,80 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mini vitrine des projets Home Assistant par ADNPolymerase." />
-  <title>ADNPolymerase — HA Projects</title>
+  <meta name="description" content="Catalogue des projets Home Assistant par ADNPolymerase." />
+  <title>ADNPolymerase — Home Assistant</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="container hero">
-      <p class="badge">ADNPolymerase</p>
-      <h1>Home Assistant App Store</h1>
+  <header class="site-header">
+    <div class="container">
+      <p class="overline">ADNPolymerase</p>
+      <h1>Home Assistant Projects</h1>
       <p class="subtitle">
-        Mes intégrations et cartes Home Assistant autour d’Oklyn, PoolLab et de la domotique piscine.
+        Intégrations et cartes personnalisées pour Home Assistant, autour d’Oklyn,
+        PoolLab et de la domotique piscine.
       </p>
     </div>
   </header>
 
   <main class="container">
-    <section class="grid">
+    <section class="projects" aria-label="Liste des projets">
 
-      <a class="case" href="https://github.com/ADNPolymerase/ha-oklyn">
-        <div class="icon">🧪</div>
-        <div>
+      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn">
+        <div class="project-top">
+          <p class="type">Integration</p>
           <h2>ha-oklyn</h2>
-          <p>Intégration Home Assistant pour récupérer et piloter les données Oklyn via le cloud.</p>
-          <div class="tags">
-            <span>Integration</span>
-            <span>Oklyn</span>
-            <span>HACS</span>
-          </div>
+        </div>
+        <p class="description">
+          Intégration Home Assistant pour récupérer et piloter les données Oklyn via le cloud.
+        </p>
+        <div class="tags">
+          <span>Home Assistant</span>
+          <span>Oklyn</span>
+          <span>Cloud</span>
         </div>
       </a>
 
-      <a class="case" href="https://github.com/ADNPolymerase/oklyn-card">
-        <div class="icon">📊</div>
-        <div>
+      <a class="project-card" href="https://github.com/ADNPolymerase/oklyn-card">
+        <div class="project-top">
+          <p class="type">Lovelace Card</p>
           <h2>oklyn-card</h2>
-          <p>Carte Lovelace pour afficher les informations Oklyn dans Home Assistant.</p>
-          <div class="tags">
-            <span>Lovelace</span>
-            <span>Card</span>
-            <span>Oklyn</span>
-          </div>
+        </div>
+        <p class="description">
+          Carte Lovelace pour afficher les informations Oklyn avec une interface claire dans Home Assistant.
+        </p>
+        <div class="tags">
+          <span>Lovelace</span>
+          <span>Card</span>
+          <span>Oklyn</span>
         </div>
       </a>
 
-      <a class="case" href="https://github.com/ADNPolymerase/ha-oklyn-local">
-        <div class="icon">🏠</div>
-        <div>
+      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn-local">
+        <div class="project-top">
+          <p class="type">Experimental</p>
           <h2>ha-oklyn-local</h2>
-          <p>Exploration de l’accès local aux équipements Oklyn pour réduire la dépendance au cloud.</p>
-          <div class="tags">
-            <span>Local</span>
-            <span>Experimental</span>
-            <span>Oklyn</span>
-          </div>
+        </div>
+        <p class="description">
+          Exploration de l’accès local aux équipements Oklyn pour réduire la dépendance au cloud.
+        </p>
+        <div class="tags">
+          <span>Local API</span>
+          <span>Oklyn</span>
+          <span>Research</span>
         </div>
       </a>
 
-      <a class="case" href="https://github.com/ADNPolymerase/poollab-card">
-        <div class="icon">🏊</div>
-        <div>
+      <a class="project-card" href="https://github.com/ADNPolymerase/poollab-card">
+        <div class="project-top">
+          <p class="type">Lovelace Card</p>
           <h2>poollab-card</h2>
-          <p>Carte Lovelace pour afficher les mesures PoolLab directement dans Home Assistant.</p>
-          <div class="tags">
-            <span>PoolLab</span>
-            <span>Piscine</span>
-            <span>Lovelace</span>
-          </div>
+        </div>
+        <p class="description">
+          Carte Lovelace pour afficher les mesures PoolLab directement dans Home Assistant.
+        </p>
+        <div class="tags">
+          <span>PoolLab</span>
+          <span>Piscine</span>
+          <span>Lovelace</span>
         </div>
       </a>
 
     </section>
   </main>
 
-  <footer class="container">
+  <footer class="container site-footer">
     <p>
       GitHub Pages ·
       <a href="https://github.com/ADNPolymerase">github.com/ADNPolymerase</a>
