@@ -48,28 +48,7 @@
 
   <main class="container">
     <section id="projects" class="projects" aria-label="Project list">
-      <a class="project-card featured" href="https://github.com/ADNPolymerase/ha-oklyn" aria-label="Open ha-oklyn on GitHub">
-        <div class="visual official-logo">
-          <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Integration</span>
-            <span class="status">Cloud</span>
-          </div>
-          <h2>ha-oklyn</h2>
-          <p data-en="Home Assistant integration to read and control Oklyn pool controller data via the cloud."
-             data-fr="Intégration Home Assistant pour récupérer et piloter les données Oklyn depuis le cloud.">
-            Home Assistant integration to read and control Oklyn pool controller data via the cloud.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>Home Assistant · Oklyn</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <a class="project-card" href="https://github.com/ADNPolymerase/oklyn-card" aria-label="Open oklyn-card on GitHub">
+      <a class="project-card featured" href="https://github.com/ADNPolymerase/oklyn-card" aria-label="Open oklyn-card on GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
         </div>
@@ -78,7 +57,7 @@
             <span class="pill">Lovelace Card</span>
             <span class="status">UI</span>
           </div>
-          <h2>oklyn-card</h2>
+          <h2>Card for Oklyn</h2>
           <p data-en="Lovelace card that displays Oklyn pool data with a clean, readable interface."
              data-fr="Carte Lovelace pour afficher les informations Oklyn avec une interface claire et lisible.">
             Lovelace card that displays Oklyn pool data with a clean, readable interface.
@@ -86,27 +65,6 @@
         </div>
         <div class="card-footer">
           <span>Lovelace · Oklyn</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-
-      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn-local" aria-label="Open ha-oklyn-local on GitHub">
-        <div class="visual official-logo">
-          <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Integration</span>
-            <span class="status">Local</span>
-          </div>
-          <h2>ha-oklyn-local</h2>
-          <p data-en="Local polling of Oklyn devices over the LAN API — no cloud dependency, read-only."
-             data-fr="Interrogation locale des équipements Oklyn via l'API LAN — sans dépendance au cloud, lecture seule.">
-            Local polling of Oklyn devices over the LAN API — no cloud dependency, read-only.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>Local API · No cloud</span>
           <span class="arrow">→</span>
         </div>
       </a>
@@ -120,7 +78,7 @@
             <span class="pill">Lovelace Card</span>
             <span class="status">Pool</span>
           </div>
-          <h2>poollab-card</h2>
+          <h2>Card for Poollab</h2>
           <p data-en="Lovelace card that displays PoolLab water analysis measurements directly in Home Assistant."
              data-fr="Carte Lovelace pour afficher les mesures PoolLab directement dans Home Assistant.">
             Lovelace card that displays PoolLab water analysis measurements directly in Home Assistant.
@@ -141,7 +99,7 @@
             <span class="pill">Lovelace Card</span>
             <span class="status">Dosing</span>
           </div>
-          <h2>dosing-tank-card</h2>
+          <h2>Card for Dosing tank</h2>
           <p data-en="Lovelace card that tracks a chemical dosing tank's level based on pump run time."
              data-fr="Carte Lovelace pour suivre le niveau d'un bidon de dosage liquide selon le temps de fonctionnement de la pompe.">
             Lovelace card that tracks a chemical dosing tank's level based on pump run time.
@@ -162,7 +120,7 @@
             <span class="pill">Lovelace Card</span>
             <span class="status">Appliances</span>
           </div>
-          <h2>ha-appliance-card</h2>
+          <h2>Card for all appliance</h2>
           <p data-en="Lovelace card for washers, dryers and dishwashers — cycle, program, remaining time, door and alerts. Works with any brand/integration via configurable entity mapping."
              data-fr="Carte Lovelace pour lave-linge, sèche-linge et lave-vaisselle — cycle, programme, temps restant, porte et alertes. Fonctionne avec n'importe quelle marque/intégration via un mapping d'entités configurable.">
             Lovelace card for washers, dryers and dishwashers — cycle, program, remaining time, door and alerts. Works with any brand/integration via configurable entity mapping.
@@ -174,19 +132,61 @@
         </div>
       </a>
 
+      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn" aria-label="Open ha-oklyn on GitHub">
+        <div class="visual official-logo">
+          <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
+        </div>
+        <div class="content">
+          <div class="meta">
+            <span class="pill">Integration</span>
+            <span class="status">Cloud</span>
+          </div>
+          <h2>HA Oklyn</h2>
+          <p data-en="Home Assistant integration to read and control Oklyn pool controller data via the cloud."
+             data-fr="Intégration Home Assistant pour récupérer et piloter les données Oklyn depuis le cloud.">
+            Home Assistant integration to read and control Oklyn pool controller data via the cloud.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span>Home Assistant · Oklyn</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn-local" aria-label="Open ha-oklyn-local on GitHub">
+        <div class="visual official-logo">
+          <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
+        </div>
+        <div class="content">
+          <div class="meta">
+            <span class="pill">Integration</span>
+            <span class="status">Local</span>
+          </div>
+          <h2>HA Oklyn local</h2>
+          <p data-en="Local polling of Oklyn devices over the LAN API — no cloud dependency, read-only."
+             data-fr="Interrogation locale des équipements Oklyn via l'API LAN — sans dépendance au cloud, lecture seule.">
+            Local polling of Oklyn devices over the LAN API — no cloud dependency, read-only.
+          </p>
+        </div>
+        <div class="card-footer">
+          <span>Local API · No cloud</span>
+          <span class="arrow">→</span>
+        </div>
+      </a>
+
       <a class="project-card" href="https://github.com/ADNPolymerase/worx_vision_cloud_plus_github" aria-label="Open Worx Vision Cloud Plus on GitHub">
         <div class="visual official-logo">
           <img src="https://raw.githubusercontent.com/ADNPolymerase/worx_vision_cloud_plus_github/main/logo.png" alt="Worx Vision Cloud Plus" />
         </div>
         <div class="content">
           <div class="meta">
-            <span class="pill">Fork</span>
+            <span class="pill">Integration</span>
             <span class="status">Vision</span>
           </div>
           <h2>Worx Vision Cloud Plus</h2>
-          <p data-en="Enhanced fork of the Worx Vision Cloud Plus integration — new sensors, more languages and fixes."
-             data-fr="Fork amélioré de l'intégration Worx Vision Cloud Plus — nouveaux capteurs, langues supplémentaires et corrections.">
-            Enhanced fork of the Worx Vision Cloud Plus integration — new sensors, more languages and fixes.
+          <p data-en="My enhanced version of the Worx Vision Cloud Plus integration — new sensors, more languages and fixes."
+             data-fr="Ma version améliorée de l'intégration Worx Vision Cloud Plus — nouveaux capteurs, langues supplémentaires et corrections.">
+            My enhanced version of the Worx Vision Cloud Plus integration — new sensors, more languages and fixes.
           </p>
         </div>
         <div class="card-footer">
