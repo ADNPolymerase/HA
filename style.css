@@ -211,25 +211,6 @@ h1 {
   line-height: 1.5;
 }
 
-.tile-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  margin-top: 14px;
-  color: var(--link);
-  font-size: 0.925rem;
-  font-weight: 400;
-}
-
-.tile-link .chev {
-  font-size: 1.05rem;
-  line-height: 1;
-  transition: transform 200ms ease;
-}
-
-.tile:hover .tile-link { text-decoration: underline; }
-.tile:hover .chev { transform: translateX(2px); }
-
 .tile-visual {
   display: flex;
   align-items: center;
