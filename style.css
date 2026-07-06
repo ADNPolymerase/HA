@@ -289,18 +289,11 @@ h1 {
   object-fit: contain;
 }
 
-.dosing-logo {
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.50), rgba(255, 255, 255, 0.20)),
-    var(--accent-soft);
-}
-
-@media (prefers-color-scheme: dark) {
-  .dosing-logo {
-    background:
-      linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
-      rgba(15, 23, 42, 0.44);
-  }
+/* Fixed background regardless of color scheme: the icon's text/strokes are
+   dark blue and need a light backdrop to stay legible at night. */
+.dosing-logo,
+.appliance-logo {
+  background: #ffffff !important;
 }
 
 .meta {
