@@ -9,195 +9,149 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-glow page-glow-one"></div>
-  <div class="page-glow page-glow-two"></div>
 
-  <header class="hero">
-    <nav class="topbar container" aria-label="Header">
+  <nav class="topbar" aria-label="Header">
+    <div class="topbar-inner">
       <a class="brand" href="https://github.com/ADNPolymerase" target="_blank" rel="noopener" aria-label="ADNPolymerase on GitHub">
         <img src="assets/profile.jpeg" alt="" class="avatar" />
-        <span>
-          <strong>ADNPolymerase</strong>
-          <small>Home Assistant Projects</small>
-        </span>
+        <span>ADNPolymerase</span>
       </a>
 
       <div class="lang-switch" role="group" aria-label="Language switch">
-        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true" aria-label="English">
-          <span class="flag" aria-hidden="true">🇬🇧</span>
-          <span class="lang-label">EN</span>
-        </button>
-        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false" aria-label="Français">
-          <span class="flag" aria-hidden="true">🇫🇷</span>
-          <span class="lang-label">FR</span>
-        </button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section class="container hero-content">
-      <p class="eyebrow">Custom integrations · Lovelace cards · Pool automation</p>
-      <h1 data-en="My Home Assistant projects" data-fr="Mes projets Home Assistant">My Home Assistant projects</h1>
-      <p class="subtitle"
-         data-en="Custom integrations, Lovelace cards and forks for connected devices in Home Assistant. Currently: Oklyn, PoolLab, Landroid Vision Cloud."
-         data-fr="Intégrations, cartes personnalisées et forks des équipements connectés dans Home Assistant. Actuellement : Oklyn, PoolLab, Landroid Vision Cloud.">
-        Custom integrations, Lovelace cards and forks for connected devices in Home Assistant.
-        Currently: Oklyn, PoolLab, Landroid Vision Cloud.
-      </p>
-    </section>
+  <header class="hero">
+    <p class="eyebrow" data-en="Custom integrations · Lovelace cards · Pool automation" data-fr="Intégrations · Cartes Lovelace · Domotique piscine">Custom integrations · Lovelace cards · Pool automation</p>
+    <h1 data-en="Home Assistant projects." data-fr="Projets Home Assistant.">Home Assistant projects.</h1>
+    <p class="subtitle"
+       data-en="Custom integrations, Lovelace cards and forks for connected devices. Currently: Oklyn, PoolLab, Landroid Vision."
+       data-fr="Intégrations, cartes personnalisées et forks pour équipements connectés. Actuellement : Oklyn, PoolLab, Landroid Vision.">
+      Custom integrations, Lovelace cards and forks for connected devices.
+      Currently: Oklyn, PoolLab, Landroid Vision.
+    </p>
   </header>
 
-  <main class="container">
-    <section id="projects" class="projects" aria-label="Project list">
-      <a class="project-card featured" href="https://github.com/ADNPolymerase/oklyn-card" aria-label="Open oklyn-card on GitHub">
-        <div class="visual official-logo">
-          <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Lovelace Card</span>
-            <span class="status">UI</span>
-          </div>
-          <h2>Card for Oklyn</h2>
-          <p data-en="Lovelace card that displays Oklyn pool data with a clean, readable interface."
-             data-fr="Carte Lovelace pour afficher les informations Oklyn avec une interface claire et lisible.">
-            Lovelace card that displays Oklyn pool data with a clean, readable interface.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>Lovelace · Oklyn</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
+  <main class="grid" aria-label="Project list">
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/poollab-card" aria-label="Open poollab-card on GitHub">
-        <div class="visual official-logo">
-          <img src="https://raw.githubusercontent.com/ADNPolymerase/poollab-card/main/logo.png" alt="PoolLab Card" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Lovelace Card</span>
-            <span class="status">Pool</span>
-          </div>
-          <h2>Card for Poollab</h2>
-          <p data-en="Lovelace card that displays PoolLab water analysis measurements directly in Home Assistant."
-             data-fr="Carte Lovelace pour afficher les mesures PoolLab directement dans Home Assistant.">
-            Lovelace card that displays PoolLab water analysis measurements directly in Home Assistant.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>PoolLab · Pool</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
+    <a class="tile" href="https://github.com/ADNPolymerase/oklyn-card" aria-label="Open oklyn-card on GitHub">
+      <div class="tile-body">
+        <p class="tile-eyebrow" data-en="Lovelace card" data-fr="Carte Lovelace">Lovelace card</p>
+        <h2>Oklyn Card</h2>
+        <p class="tile-desc"
+           data-en="Pool data at a glance — pH, RedOx, temperatures, pump control."
+           data-fr="Vos données piscine en un coup d'œil — pH, RedOx, températures, contrôle pompe.">
+          Pool data at a glance — pH, RedOx, temperatures, pump control.
+        </p>
+        <span class="tile-link"><span data-en="View on GitHub" data-fr="Voir sur GitHub">View on GitHub</span> <span class="chev">›</span></span>
+      </div>
+      <div class="tile-visual">
+        <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
+      </div>
+    </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/ha-dosing-tank-card" aria-label="Open dosing-tank-card on GitHub">
-        <div class="visual dosing-logo">
-          <img src="assets/dosing-tank.svg" alt="Dosing tank" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Lovelace Card</span>
-            <span class="status">Dosing</span>
-          </div>
-          <h2>Card for Dosing tank</h2>
-          <p data-en="Lovelace card that tracks a chemical dosing tank's level based on pump run time."
-             data-fr="Carte Lovelace pour suivre le niveau d'un bidon de dosage liquide selon le temps de fonctionnement de la pompe.">
-            Lovelace card that tracks a chemical dosing tank's level based on pump run time.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>Dosing · Tank</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
+    <a class="tile" href="https://github.com/ADNPolymerase/poollab-card" aria-label="Open poollab-card on GitHub">
+      <div class="tile-body">
+        <p class="tile-eyebrow" data-en="Lovelace card" data-fr="Carte Lovelace">Lovelace card</p>
+        <h2>PoolLab Card</h2>
+        <p class="tile-desc"
+           data-en="Water analysis measurements, history and trends in Home Assistant."
+           data-fr="Mesures d'analyse d'eau, historique et tendances dans Home Assistant.">
+          Water analysis measurements, history and trends in Home Assistant.
+        </p>
+        <span class="tile-link"><span data-en="View on GitHub" data-fr="Voir sur GitHub">View on GitHub</span> <span class="chev">›</span></span>
+      </div>
+      <div class="tile-visual">
+        <img src="https://raw.githubusercontent.com/ADNPolymerase/poollab-card/main/logo.png" alt="PoolLab Card" />
+      </div>
+    </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/ha-appliance-card" aria-label="Open ha-appliance-card on GitHub">
-        <div class="visual appliance-logo">
-          <img src="assets/appliance-card.svg" alt="Appliance Card" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Lovelace Card</span>
-            <span class="status">Appliances</span>
-          </div>
-          <h2>Card for all appliance</h2>
-          <p data-en="Lovelace card for washers, dryers and dishwashers — cycle, program, remaining time, door and alerts. Works with any brand/integration via configurable entity mapping."
-             data-fr="Carte Lovelace pour lave-linge, sèche-linge et lave-vaisselle — cycle, programme, temps restant, porte et alertes. Fonctionne avec n'importe quelle marque/intégration via un mapping d'entités configurable.">
-            Lovelace card for washers, dryers and dishwashers — cycle, program, remaining time, door and alerts. Works with any brand/integration via configurable entity mapping.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>Lovelace · Appliances</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
+    <a class="tile" href="https://github.com/ADNPolymerase/ha-dosing-tank-card" aria-label="Open dosing-tank-card on GitHub">
+      <div class="tile-body">
+        <p class="tile-eyebrow" data-en="Lovelace card" data-fr="Carte Lovelace">Lovelace card</p>
+        <h2>Dosing Tank Card</h2>
+        <p class="tile-desc"
+           data-en="Chemical tank level tracked from pump run time. Refill alerts included."
+           data-fr="Niveau du bidon suivi via le temps de pompe. Alertes de recharge incluses.">
+          Chemical tank level tracked from pump run time. Refill alerts included.
+        </p>
+        <span class="tile-link"><span data-en="View on GitHub" data-fr="Voir sur GitHub">View on GitHub</span> <span class="chev">›</span></span>
+      </div>
+      <div class="tile-visual">
+        <img src="assets/dosing-tank.svg" alt="Dosing tank" />
+      </div>
+    </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn" aria-label="Open ha-oklyn on GitHub">
-        <div class="visual official-logo">
-          <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Integration</span>
-            <span class="status">Cloud</span>
-          </div>
-          <h2>HA Oklyn</h2>
-          <p data-en="Home Assistant integration to read and control Oklyn pool controller data via the cloud."
-             data-fr="Intégration Home Assistant pour récupérer et piloter les données Oklyn depuis le cloud.">
-            Home Assistant integration to read and control Oklyn pool controller data via the cloud.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>Home Assistant · Oklyn</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
+    <a class="tile" href="https://github.com/ADNPolymerase/ha-appliance-card" aria-label="Open ha-appliance-card on GitHub">
+      <div class="tile-body">
+        <p class="tile-eyebrow" data-en="Lovelace card" data-fr="Carte Lovelace">Lovelace card</p>
+        <h2>Appliance Card</h2>
+        <p class="tile-desc"
+           data-en="Washers, dryers, dishwashers — any brand, via configurable entity mapping."
+           data-fr="Lave-linge, sèche-linge, lave-vaisselle — toutes marques, via mapping d'entités.">
+          Washers, dryers, dishwashers — any brand, via configurable entity mapping.
+        </p>
+        <span class="tile-link"><span data-en="View on GitHub" data-fr="Voir sur GitHub">View on GitHub</span> <span class="chev">›</span></span>
+      </div>
+      <div class="tile-visual">
+        <img src="assets/appliance-card.svg" alt="Appliance Card" />
+      </div>
+    </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/ha-oklyn-local" aria-label="Open ha-oklyn-local on GitHub">
-        <div class="visual official-logo">
-          <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Integration</span>
-            <span class="status">Local</span>
-          </div>
-          <h2>HA Oklyn local</h2>
-          <p data-en="Local polling of Oklyn devices over the LAN API — no cloud dependency, read-only."
-             data-fr="Interrogation locale des équipements Oklyn via l'API LAN — sans dépendance au cloud, lecture seule.">
-            Local polling of Oklyn devices over the LAN API — no cloud dependency, read-only.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>Local API · No cloud</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
+    <a class="tile" href="https://github.com/ADNPolymerase/ha-oklyn" aria-label="Open ha-oklyn on GitHub">
+      <div class="tile-body">
+        <p class="tile-eyebrow" data-en="Integration · Cloud" data-fr="Intégration · Cloud">Integration · Cloud</p>
+        <h2>Oklyn</h2>
+        <p class="tile-desc"
+           data-en="Read and control your Oklyn pool controller through the cloud API."
+           data-fr="Lisez et pilotez votre boîtier Oklyn via l'API cloud.">
+          Read and control your Oklyn pool controller through the cloud API.
+        </p>
+        <span class="tile-link"><span data-en="View on GitHub" data-fr="Voir sur GitHub">View on GitHub</span> <span class="chev">›</span></span>
+      </div>
+      <div class="tile-visual">
+        <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
+      </div>
+    </a>
 
-      <a class="project-card" href="https://github.com/ADNPolymerase/worx_vision_cloud_plus_github" aria-label="Open Worx Vision Cloud Plus on GitHub">
-        <div class="visual official-logo">
-          <img src="https://raw.githubusercontent.com/ADNPolymerase/worx_vision_cloud_plus_github/main/logo.png" alt="Worx Vision Cloud Plus" />
-        </div>
-        <div class="content">
-          <div class="meta">
-            <span class="pill">Integration</span>
-            <span class="status">Vision</span>
-          </div>
-          <h2>Worx Vision Cloud Plus</h2>
-          <p data-en="My enhanced version of the Worx Vision Cloud Plus integration — new sensors, more languages and fixes."
-             data-fr="Ma version améliorée de l'intégration Worx Vision Cloud Plus — nouveaux capteurs, langues supplémentaires et corrections.">
-            My enhanced version of the Worx Vision Cloud Plus integration — new sensors, more languages and fixes.
-          </p>
-        </div>
-        <div class="card-footer">
-          <span>Worx · Robot mower</span>
-          <span class="arrow">→</span>
-        </div>
-      </a>
-    </section>
+    <a class="tile" href="https://github.com/ADNPolymerase/ha-oklyn-local" aria-label="Open ha-oklyn-local on GitHub">
+      <div class="tile-body">
+        <p class="tile-eyebrow" data-en="Integration · Local" data-fr="Intégration · Local">Integration · Local</p>
+        <h2>Oklyn Local</h2>
+        <p class="tile-desc"
+           data-en="Local LAN polling of Oklyn devices — no cloud dependency."
+           data-fr="Interrogation locale des équipements Oklyn — sans dépendance au cloud.">
+          Local LAN polling of Oklyn devices — no cloud dependency.
+        </p>
+        <span class="tile-link"><span data-en="View on GitHub" data-fr="Voir sur GitHub">View on GitHub</span> <span class="chev">›</span></span>
+      </div>
+      <div class="tile-visual">
+        <img src="https://raw.githubusercontent.com/ADNPolymerase/ha-oklyn/main/custom_components/oklyn/brand/logo.png" alt="Oklyn" />
+      </div>
+    </a>
+
+    <a class="tile" href="https://github.com/ADNPolymerase/worx_vision_cloud_plus_github" aria-label="Open Worx Vision Cloud Plus on GitHub">
+      <div class="tile-body">
+        <p class="tile-eyebrow" data-en="Integration · Cloud" data-fr="Intégration · Cloud">Integration · Cloud</p>
+        <h2>Worx Vision Cloud PLUS</h2>
+        <p class="tile-desc"
+           data-en="Enhanced Landroid Vision integration — new sensors, more languages, fixes."
+           data-fr="Intégration Landroid Vision améliorée — nouveaux capteurs, langues, correctifs.">
+          Enhanced Landroid Vision integration — new sensors, more languages, fixes.
+        </p>
+        <span class="tile-link"><span data-en="View on GitHub" data-fr="Voir sur GitHub">View on GitHub</span> <span class="chev">›</span></span>
+      </div>
+      <div class="tile-visual">
+        <img src="https://raw.githubusercontent.com/ADNPolymerase/worx_vision_cloud_plus_github/main/logo.png" alt="Worx Vision Cloud Plus" />
+      </div>
+    </a>
+
   </main>
 
-  <footer class="footer container">
+  <footer class="footer">
     <span>ADNPolymerase · Home Assistant Projects</span>
   </footer>
 
