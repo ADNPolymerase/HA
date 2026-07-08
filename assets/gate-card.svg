@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="160" viewBox="0 0 520 160" role="img" aria-label="Gate Card">
+  <rect x="24" y="24" width="14" height="112" rx="4" fill="#1d4ed8"/>
+  <rect x="112" y="24" width="14" height="112" rx="4" fill="#1d4ed8"/>
+  <rect x="38" y="46" width="74" height="68" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="7"/>
+  <path d="M38 46 L112 114 M112 46 L38 114" stroke="#2563eb" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="75" cy="80" r="5" fill="#1d4ed8"/>
+  <text x="154" y="77" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#1e3a8a">Gate</text>
+  <text x="154" y="121" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#2563eb">Card</text>
+</svg>
