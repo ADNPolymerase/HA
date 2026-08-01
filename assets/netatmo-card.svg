@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="160" viewBox="0 0 520 160" role="img" aria-label="Netatmo Card">
+  <defs>
+    <linearGradient id="groove" x1="0" x2="1">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="160" rx="34" fill="none"/>
+
+  <ellipse cx="118" cy="141" rx="26" ry="7" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+  <path d="M100 96 H136 C139 96 142 99 142 102 V134 C142 137 139 140 136 140 H100 C97 140 94 137 94 134 V102 C94 99 97 96 100 96Z" fill="#dbeafe" stroke="#2563eb" stroke-width="6"/>
+  <ellipse cx="118" cy="96" rx="24" ry="6" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+  <rect x="104" y="112" width="28" height="7" rx="3.5" fill="url(#groove)"/>
+
+  <ellipse cx="55" cy="141" rx="30" ry="8" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+  <path d="M34 32 H76 C80 32 83 35 83 39 V133 C83 137 80 140 76 140 H34 C30 140 27 137 27 133 V39 C27 35 30 32 34 32Z" fill="#dbeafe" stroke="#2563eb" stroke-width="6"/>
+  <ellipse cx="55" cy="32" rx="28" ry="7" fill="#dbeafe" stroke="#2563eb" stroke-width="5"/>
+  <rect x="38" y="64" width="34" height="9" rx="4.5" fill="url(#groove)"/>
+
+  <text x="164" y="77" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#1e3a8a">Netatmo</text>
+  <text x="164" y="121" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#2563eb">Card</text>
+</svg>
