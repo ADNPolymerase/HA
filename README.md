@@ -1,4 +1,4 @@
-# HA — ADNPolymerase
+# HA · ADNPolymerase
 
 Mini site GitHub Pages pour présenter mes projets Home Assistant.
 
