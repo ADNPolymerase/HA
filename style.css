@@ -9,6 +9,7 @@
   --muted: #6e6e73;
 
   --link: #0071e3;
+  --sponsor: #db61a2;
 
   --nav-bg: rgba(251, 251, 253, 0.8);
   --nav-border: rgba(0, 0, 0, 0.08);
@@ -28,6 +29,7 @@
     --muted: #86868b;
 
     --link: #2997ff;
+    --sponsor: #f778ba;
 
     --nav-bg: rgba(22, 22, 23, 0.8);
     --nav-border: rgba(255, 255, 255, 0.1);
@@ -165,6 +167,24 @@ body {
 }
 
 .btn-coffee:hover { color: var(--text); }
+
+.btn-sponsor {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.btn-sponsor:hover { color: var(--text); }
+
+.btn-sponsor .heart {
+  width: 15px;
+  height: 15px;
+  fill: var(--sponsor);
+}
 
 .eyebrow {
   margin-bottom: 14px;
