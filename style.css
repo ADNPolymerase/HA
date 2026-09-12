@@ -218,15 +218,28 @@ h1 {
   margin: 0 auto;
 }
 
-.section + .section { margin-top: 44px; }
+.section:first-child { margin-top: 16px; }
+
+.section + .section { margin-top: 60px; }
 
 .section:last-child { padding-bottom: 56px; }
 
+.section-head {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
 .section-title {
-  margin: 0 0 16px;
-  color: var(--text);
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.section-sub {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 0.95rem;
   letter-spacing: -0.01em;
 }
 
