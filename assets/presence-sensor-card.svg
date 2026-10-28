@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="160" viewBox="0 0 520 160" role="img" aria-label="Presence Sensor Card">
+  <defs>
+    <radialGradient id="fan" cx="83" cy="22" r="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563eb" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0.08"/>
+    </radialGradient>
+  </defs>
+
+  <!-- the wall the sensor is screwed to -->
+  <line x1="22" y1="16" x2="144" y2="16" stroke="#1e3a8a" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- detection fan across the floor, 60 to 120 degrees, radius 112 -->
+  <path d="M83 22 L27 119 A112 112 0 0 0 139 119 Z" fill="url(#fan)" stroke="#2563eb" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- the two inner range arcs -->
+  <g fill="none" stroke="#1d4ed8" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="7 6" opacity="0.7">
+    <path d="M64.4 54.3 A37.3 37.3 0 0 0 101.6 54.3"/>
+    <path d="M45.7 86.7 A74.7 74.7 0 0 0 120.3 86.7"/>
+  </g>
+
+  <!-- someone standing at the distance the radar reads -->
+  <g transform="translate(83 110) scale(2.05)" fill="#1d4ed8">
+    <ellipse cx="0" cy="0.5" rx="6" ry="1.6" fill="#1e3a8a" opacity="0.18"/>
+    <circle cx="0" cy="-24" r="4.2"/>
+    <path d="M-5 -18.5 Q0 -20.5 5 -18.5 L4.4 -8 L-4.4 -8 Z"/>
+    <g fill="none" stroke="#1d4ed8" stroke-width="2.6" stroke-linecap="round">
+      <path d="M-4.6 -17.5 L-6.4 -9"/>
+      <path d="M4.6 -17.5 L6.4 -9"/>
+      <path d="M-2.2 -8.5 L-2.6 0"/>
+      <path d="M2.2 -8.5 L2.6 0"/>
+    </g>
+  </g>
+
+  <!-- the sensor itself -->
+  <rect x="62" y="8" width="42" height="20" rx="7" fill="#dbeafe" stroke="#2563eb" stroke-width="6"/>
+  <circle cx="83" cy="18" r="4.5" fill="#06b6d4"/>
+
+  <text x="154" y="77" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#1e3a8a">Presence</text>
+  <text x="154" y="121" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" fill="#2563eb">Sensor</text>
+</svg>
